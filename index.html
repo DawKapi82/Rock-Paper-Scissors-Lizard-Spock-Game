@@ -1,84 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css"
-    <title>Document</title>
-    <style>
-        html {
-            font-size: 42px
-        }
-    </style>
-    <title>GAME</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock, Paper, Scissor, Lizard, Spock Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
-    <!-- Result -->
-    <section id="result">
-        <div id="score">
-          <span id="player1-score" class="points">0</span>
+    <!-- Rules -->
+    <div id="rules">
+      <div class="rules-container">
+        <img src="assets/images/PHOTO-2022-12-22-12-17-07.jpg">
+      </div>
+    </div>
+
+    <div class="center">
+      <span id="result">
+        <span id="score">
+          <span id="player-score" class="points">0</span>
           :
           <span id="computer-score" class="points">0</span>
-        </div>
-        <p id="round-message">Choose your option</p>
-      </section>
+        </span>
+      </span>
+    </div>
 
-       <!-- Player 1 area -->
-       <section id="player1" class="players">
-        <span class="name">Player1</span>
-        <div class="selected-option">
-          <span class="option" data-index="0"> </span>
-        </div>
-        <div class="available-options">
-          <span class="option" data-index="0">
-            <img src="assets/images/lizard.png" alt="Lizard" title="Lizard" />
-          </span>
-          <span class="option" data-index="1">
-            <img src="assets/images/paper.png" alt="Paper" title="Paper" />
-          </span>
-          <span class="option" data-index="2">
-            <img src="assets/images/rock.png" alt="Rock" title="Rock" />
-          </span>
-          <span class="option" data-index="3">
-            <img src="assets/images/scissors.png" alt="Scissor" title="Scissor" />
-          </span>
-          <span class="option" data-index="4">
-            <img src="assets/images/spock.png" alt="Spock" title="Spock" />
-          </span>
-        </div>
-      </section>
+  <div id="normal" class="center">
+    <!-- Player 1 area -->
+    <span id="player1">
+      <span class="name">Player</span>
+      <span class="selected-option">
+        <span class="option" data-index="-1"><i id="player-icon"></i></span>
+      </span>
+    </span>
 
+    <!-- Player 2 area -->
+    <span id="player2">
+      <span class="selected-option">
+        <span class="option" data-index="-1"> <i id="computer-icon"></i></span>
+      </span>
+      <span class="name">Bot</span>
+    </span>
+  </div>
 
-      <!-- Computer area -->
-      <section id="computer" class="players">
-        <span class="name">Bot</span>
-        <div class="selected-option">
-          <span class="option" data-index="0"> </span>
-        </div>
-        <div class="available-options">
-          <span class="option" data-index="0">
-            <img src="assets/images/lizard.png" alt="Lizard" title="Lizard" />
-          </span>
-          <span class="option" data-index="1">
-            <img src="assets/images/paper.png" alt="Paper" title="Paper" />
-          </span>
-          <span class="option" data-index="2">
-            <img src="assets/images/rock.png" alt="Rock" title="Rock" />
-          </span>
-          <span class="option" data-index="3">
-            <img src="assets/images/scissors.png" alt="Scissor" title="Scissor" />
-          </span>
-          <span class="option" data-index="4">
-            <img src="assets/images/spock.png" alt="Spock" title="Spock" />
-          </span>
-        </div>
-      </section>
+  <div id="mobile" class="center">
+    <!-- Player 1 area -->
+    <div id="player1">
+      <span class="name">Player</span>
+      <span class="selected-option">
+        <span class="option" data-index="-1"><i id="player-icon-mobile"></i></span>
+      </span>
+    </div>
 
-      <!-- Reset button -->
-      <span class="reset"><span>Reset</span></span>
-    </main>
+    <!-- Player 2 area -->
+    <div id="player2">
+      <span class="name">Bot</span>
+      <span class="selected-option">
+        <span class="option" data-index="-1"> <i id="computer-icon-mobile"></i></span>
+      </span>
+    </div>
+  </div>
+
+ <div class="center">
+    <div class="available-options center">
+      <span class="option" data-index="0">
+        <i class="fa-solid fa-hand-spock"></i>
+      </span>
+      <span class="option" data-index="1">
+        <i class="fa-regular fa-hand-back-fist"></i>
+      </span>
+      <span class="option" data-index="2">
+      <i class="fa-solid fa-hand-scissors"></i>
+    </span>
+      <span class="option" data-index="3">
+        <i class="fa-solid fa-toilet-paper"></i>
+      </span>
+      <span class="option" data-index="4">
+        <i class="fa-solid fa-hand-lizard"></i>
+      </span>
+    </div>
+  </div>
+
+    <!-- Reset button -->
+    <div class="center">
+      <button id="reset-btn" class="reset"><span>Reset</span></button>
+    </div>
     
 
     <script src="assets/js/script.js"></script>
