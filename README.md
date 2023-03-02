@@ -20,7 +20,7 @@ Project logic is written in JavaScript with interface in HTML and CSS.
 
 ## Screenshots
 
-![jpg](assets/images/screen1.jpg)
+![paper spock rock game](https://user-images.githubusercontent.com/118285946/222403812-a0f04391-1420-4ad7-a568-8766a608809d.jpeg)
 
 ## Code
 
